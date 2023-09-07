@@ -1,11 +1,15 @@
+import { styled } from 'styled-components';
 import { Link, useLocation } from "react-router-dom";
+
+const StyledHeader = styled.header`
+`
 
 function Header() {
   const currentPage = useLocation().pathname;
 
   return (
     <div className="container">
-    <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <StyledHeader className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <h2 className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
             t-willis
         </h2>
@@ -43,7 +47,7 @@ function Header() {
         </Link>
       </li>
     </ul>
-    </header>
+    </StyledHeader>
     </div>
   );
 }
