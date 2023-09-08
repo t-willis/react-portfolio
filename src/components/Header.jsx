@@ -2,13 +2,18 @@ import { styled } from 'styled-components';
 import { Link, useLocation } from "react-router-dom";
 
 const StyledHeader = styled.header`
+background: white;
+`
+const StyledContainer = styled.header`
+position: sticky;
+top: 0;
 `
 
 function Header() {
   const currentPage = useLocation().pathname;
 
   return (
-    <div className="container">
+    <StyledContainer className="container">
     <StyledHeader className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <h2 className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
             t-willis
@@ -48,7 +53,7 @@ function Header() {
       </li>
     </ul>
     </StyledHeader>
-    </div>
+    </StyledContainer>
   );
 }
 

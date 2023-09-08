@@ -1,18 +1,19 @@
-import { styled } from 'styled-components';
-const StyledFooter = styled.footer`
-text-align: center;
-`
+import { styled } from "styled-components";
+import GithubLogo from "../assets/GitHubLogo.png";
+import LinkedInLogo from "../assets/LinkedInLogo.png"
+
+const StyledFooterContainer = styled.footer`
+`;
 
 function Footer() {
-    return (
-        <div className="container">
-        <StyledFooter className="footer d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-top">
-            <div className="container">
-            test
-            </div>
-        </StyledFooter>
-        </div>
-    );
+  return (
+    <StyledFooterContainer className="container">
+      <div className="footer d-flex flex-row align-items-center justify-content-center py-3 mb-4 border-top">
+            <img className="mx-5" src={GithubLogo} alt="GitHub Link" height="50px"/>
+            <img className="mx-5" src={LinkedInLogo} alt="LinkedIn Link" height="50px"/>
+      </div>
+    </StyledFooterContainer>
+  );
 }
 
 export default Footer;
