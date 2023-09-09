@@ -37,7 +37,7 @@ export default function Contact() {
       return;
     }
 
-      setErrorMessage('Message has been sent!');
+      setErrorMessage('Form has been submitted!');
       setEmail('');
       setNameField('');
       setMessage('');
