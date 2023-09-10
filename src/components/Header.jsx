@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import Navigation from "./Navigation";
+// import PropTypes from 'prop-types';
 
 const StyledHeader = styled.header`
   background: white;
@@ -12,13 +13,17 @@ const StyledContainer = styled.header`
 export default function Header({ setCurrentPage }) {
 
   return (
-    <StyledContainer className="container">
-      <StyledHeader className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <h2 className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-decoration-none">
+    <StyledContainer className="container text-nowrap border-bottom d-flex align-items-center justify-content-around">
+      <StyledHeader>
+        <h2>
           t-willis
         </h2>
-        <Navigation setCurrentPage={setCurrentPage}/>
       </StyledHeader>
+      <Navigation setCurrentPage={setCurrentPage}/>
     </StyledContainer>
   );
 }
+
+// Header.PropTypes = {
+//   setCurrentPage: PropTypes.func,
+// }
