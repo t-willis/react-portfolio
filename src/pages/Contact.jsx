@@ -45,7 +45,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="container d-flex flex-column justify-content-center text-center">
+      <div className="container d-flex flex-column justify-content-center text-center p-4">
         <h3>Contact: </h3>
 
           <form className="form p-4" onSubmit={handleFormSubmit}>

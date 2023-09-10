@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="container text-center p-5">
+    <div className="container text-center p-4">
       <div className="row justify-content-center">
         <div className="col-lg-8 col-sm-6">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
