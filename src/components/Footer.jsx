@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import GithubLogo from "../assets/GitHubLogo.png";
 import LinkedInLogo from "../assets/LinkedInLogo.png";
+import StackOverflowLogo from "../assets/StackOverflowLogo.png";
 
 const StyledFooterContainer = styled.footer``;
 
@@ -17,7 +18,7 @@ const StyledImg = styled.img`
 function Footer() {
   return (
     <StyledFooterContainer className="container">
-      <div className="footer d-flex flex-row align-items-center justify-content-center py-3 mb-4 border-top">
+      <div className="footer d-flex flex-row align-items-center justify-content-center py-4 mb-4 border-top">
         <a href="https://github.com/t-willis" target="_blank" rel="noreferrer">
           <StyledImg
             className="mx-5"
@@ -31,6 +32,14 @@ function Footer() {
             className="mx-5"
             src={LinkedInLogo}
             alt="LinkedIn Link"
+            height="50px"
+          />
+        </a>
+        <a href="https://stackoverflow.com/users/22535124/t-willis" target="_blank" rel="noreferrer">
+          <StyledImg
+            className="mx-5"
+            src={StackOverflowLogo}
+            alt="Stack Overflow Link"
             height="50px"
           />
         </a>
