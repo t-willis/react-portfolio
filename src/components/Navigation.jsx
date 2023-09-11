@@ -3,8 +3,10 @@ import { styled } from "styled-components";
 
 const StyledA = styled.a`
     text-decoration: none;
+    transition: 0.3s;
     &:hover {
-        text-decoration: underline;
+        transition: 0.3s;
+        scale: 125%;
     }
 `
 
