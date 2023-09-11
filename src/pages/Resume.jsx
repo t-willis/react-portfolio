@@ -1,7 +1,7 @@
-export default function About() {
+export default function Resume() {
     return (
       <div className="container p-4">
-        <h1>Resume</h1>
+        <h3 className="text-center pb-4">Resume</h3>
         <p>
           Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
           Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed

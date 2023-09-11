@@ -1,9 +1,9 @@
-
+import PropTypes from 'prop-types';
 
 export default function Project(props) {
   return (
     <>
-    <div className="container col-6 pb-4">
+    <div className="container col-lg-6 col-md-12 flex-md-fill pb-4">
       <div className="card bg-dark text-white">
         <img src={props.srcUrl} className="card-img" alt="{props.description}" />
         <div className="card-img-overlay">
@@ -17,4 +17,10 @@ export default function Project(props) {
     </div>
     </>
   );
+}
+
+Project.propTypes = {
+  srcUrl: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
 }
