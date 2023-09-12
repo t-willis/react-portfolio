@@ -11,7 +11,7 @@ const StyledImg = styled.img`
   &:hover {
     transition: 0.3s;
     opacity: 100%;
-    scale: 125%;
+    /* scale: 125%; */
   }
 `;
 

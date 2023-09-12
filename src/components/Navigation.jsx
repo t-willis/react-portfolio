@@ -1,27 +1,23 @@
 // import PropTypes from 'prop-types';
-import { styled } from "styled-components";
+
+import styled from 'styled-components';
 
 const StyledA = styled.a`
-    text-decoration: none;
-    transition: 0.3s;
-    &:hover {
-        transition: 0.3s;
-        scale: 125%;
-    }
+    text-decoration: ${props => props.$active ? 'underline' : 'none'};
 `
 
-export default function Navigation({ setCurrentPage }) {
-    const handleLink = (e, page) => {
-        e.preventDefault();
+
+export default function Navigation({ setCurrentPage, currentPage }) {
+    const handleLink = (page) => {
         setCurrentPage(page);
     }
     return (
         <>
         <nav className="d-flex gap-4">
-            <StyledA href="#/" onClick={(e) => handleLink(e, '/')}>About</StyledA>
-            <StyledA href="#/portfolio" onClick={(e) => handleLink(e, 'portfolio')}>Portfolio</StyledA>
-            <StyledA href="#/contact" onClick={(e) => handleLink(e, 'contact')}>Contact</StyledA>
-            <StyledA href="#/resume" onClick={(e) => handleLink(e, 'resume')}>Resume</StyledA>
+            <StyledA $active={currentPage === "/" } href="" onClick={() => handleLink('/')}>About</StyledA>
+            <StyledA $active={currentPage === "portfolio" } href="#portfolio" onClick={() => handleLink('portfolio')}>Portfolio</StyledA>
+            <StyledA $active={currentPage === "contact" } href="#contact" onClick={() => handleLink('contact')}>Contact</StyledA>
+            <StyledA $active={currentPage === "resume" } href="#resume" onClick={() => handleLink('resume')}>Resume</StyledA>
         </nav>
         </>
     )

@@ -49,11 +49,11 @@ export default function Contact() {
         <h3>Contact: </h3>
 
           <form className="form p-4" onSubmit={handleFormSubmit}>
-            <input className="m-2 w-50" value={nameField} name="nameField" onChange={handleInputChange} type="text" placeholder="name" autoComplete="off" />
+            <input className="m-2 w-50" value={nameField} name="nameField" onChange={handleInputChange} type="text" placeholder="name" autoComplete="off" required/>
             <br></br>
-            <input className="m-2 w-50" value={email} name="email" onChange={handleInputChange} type="email" placeholder="email" autoComplete="off" />
+            <input className="m-2 w-50" value={email} name="email" onChange={handleInputChange} type="email" placeholder="email" autoComplete="off" required/>
             <br></br>
-            <textarea className="m-2 w-50" value={message} name="message" onChange={handleInputChange} type="text" placeholder="message" autoComplete="off" />
+            <textarea className="m-2 w-50" value={message} name="message" onChange={handleInputChange} type="text" placeholder="message" autoComplete="off" required/>
             <br></br>
             <button type="submit">Submit</button>
           </form>

@@ -11,7 +11,7 @@ export default function App() {
   const [currentPage, setCurrentPage] = useState("/");
   return (
     <>
-      <Header setCurrentPage={setCurrentPage} />
+      <Header setCurrentPage={setCurrentPage} currentPage={currentPage}/>
       <main className="container">
         {currentPage === "/" && <About setCurrentPage={setCurrentPage} />}
         {currentPage === "portfolio" && <Portfolio />}

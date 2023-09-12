@@ -11,7 +11,7 @@ const StyledContainer = styled.header`
   z-index: 2;
 `;
 
-export default function Header({ setCurrentPage }) {
+export default function Header({ setCurrentPage, currentPage }) {
 
   return (
     <StyledContainer className="container p-4 text-nowrap border-bottom d-lg-flex align-items-lg-center justify-content-lg-around d-md-flex justify-content-md-around align-items-md-center d-sm-flex align-items-sm-center justify-content-sm-around">
@@ -20,7 +20,7 @@ export default function Header({ setCurrentPage }) {
           t-willis
         </h2>
       </StyledHeader>
-      <Navigation setCurrentPage={setCurrentPage}/>
+      <Navigation setCurrentPage={setCurrentPage} currentPage={currentPage}/>
     </StyledContainer>
   );
 }
