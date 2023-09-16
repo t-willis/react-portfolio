@@ -2,6 +2,11 @@ export default function Resume() {
   return (
     <div className="container p-4">
       <h3 className="text-center pb-4">Resume</h3>
+      <p>
+        <a href="https://www.linkedin.com/in/taylor-willis-967721273/" target="_blank" rel="noreferrer">
+          View My Resume
+        </a>
+      </p>
       <h4>Front-End Proficiencies</h4>
       <ul>
         <li>
