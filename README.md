@@ -21,6 +21,8 @@ If you want to deploy this app locally you'll need to do the following:
 
 ## Usage
 
+![Portfolio Demonstration Gif](./assets/images/react-portfolio.gif)
+
 There are a few facets to this portfolio page, luckily none of them are too complicated.
 
 - The 'About' page doubles as the home page and will be visible when a user initially navigates to the webpage

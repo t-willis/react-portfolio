@@ -4,7 +4,7 @@ export default function Resume() {
       <h3 className="text-center pb-4">Resume</h3>
       <p>
         <a href="https://www.linkedin.com/in/taylor-willis-967721273/" target="_blank" rel="noreferrer">
-          View My Resume
+          Download Resume
         </a>
       </p>
       <h4>Front-End Proficiencies</h4>
